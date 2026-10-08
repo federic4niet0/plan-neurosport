@@ -476,13 +476,6 @@
       </ul>
     </div>
     <div class="card">
-      <h3>WhatsApp</h3>
-      <ul>
-        <li>Un envío por semana como máximo, con imagen o video corto y botón de reserva.</li>
-        <li>Las historias se replican en el estado.</li>
-      </ul>
-    </div>
-    <div class="card">
       <h3>Otras redes</h3>
       <ul>
         <li>Facebook replica lo de Instagram.</li>
@@ -683,49 +676,13 @@
     </ul>
   </section>
 
-  <section class="phase">
-    <h2>Envíos por WhatsApp</h2>
-    <p class="range">8 de octubre al 26 de noviembre</p>
-    <p class="goal">Siete envíos, siempre con un mensaje de 3 líneas como máximo, una imagen o un video corto y el enlace de reserva. Los textos finales se arman cuando llegue cada fecha.</p>
-    <ul class="rows">
-      <li>
-        <span class="date">Jue 8/10</span>
-        <div class="task"><b>Academia, a ex alumnos de Primeros Toques.</b> Aviso del 15% hasta el 15/11, con la imagen del post informativo y el botón de WhatsApp. Si ya se envió, saltear.</div>
-      </li>
-      <li>
-        <span class="date">Jue 22/10</span>
-        <div class="task"><b>Centro de Neurociencia.</b> Clip de 15 a 20 segundos del 13/10 y una línea: entrenamiento individual o en grupo, para todos los deportes. Incluir la promo de 4 si ya está definida.</div>
-      </li>
-      <li>
-        <span class="date">Jue 29/10</span>
-        <div class="task"><b>Academia: quedan 17 días.</b> Recordatorio de los dos descuentos, los lugares limitados y el botón de reserva.</div>
-      </li>
-      <li>
-        <span class="date">Jue 5/11</span>
-        <div class="task"><b>Centro: promo para grupos.</b> Mensaje corto con la promo de 4, dirigido a quienes ya preguntaron por el Centro. Publicar solo con la promo definida.</div>
-      </li>
-      <li>
-        <span class="date">Mié 11/11</span>
-        <div class="task"><b>Academia: último llamado.</b> Quedan 4 días de descuento. Imagen simple y el botón de WhatsApp.</div>
-      </li>
-      <li>
-        <span class="date">Sáb 14/11</span>
-        <div class="task"><b>Academia: mañana termina.</b> Mensaje de una línea a quienes consultaron y no reservaron.</div>
-      </li>
-      <li>
-        <span class="date">Jue 26/11</span>
-        <div class="task"><b>Academia: lugares por grupo.</b> Aviso de arranque el 16/12 y de los cupos que quedan, sin descuento.</div>
-      </li>
-    </ul>
-  </section>
-
   <p class="label" style="margin-top:48px">Pauta: cómo está armada</p>
   <div class="grid">
     <div class="card">
       <h3>Anuncio actual</h3>
       <ul>
         <li>Pieza: reel de la Academia, publicado como colaboración.</li>
-        <li>Objetivo: Más mensajes, con botón a WhatsApp 096 657 777.</li>
+        <li>Objetivo: Más mensajes, con botón a WhatsApp.</li>
         <li>Presupuesto diario fijo, con duración de dos semanas y corte manual.</li>
         <li>Público: sobre todo Montevideo y Canelones.</li>
       </ul>
@@ -1060,7 +1017,6 @@
     <div class="card"><h3>Rodri y el Centro</h3><p>Confirmar hoy o mañana el día de grabación y qué clases o clientes pueden aparecer. Sin eso se corre el reel del 16/10.</p></div>
     <div class="card"><h3>Promo de 4</h3><p>Definir las condiciones para grupos de 4 en el Centro y para adultos mayores antes del 22/10. No se publican precios en las piezas.</p></div>
     <div class="card"><h3>Pauta del Centro</h3><p>Presupuesto aparte del de la Academia. Acordarlo antes del 19/10.</p></div>
-    <div class="card"><h3>WhatsApp del Centro</h3><p>Confirmar si usa el mismo número de la Academia, 096 657 777, o uno propio, antes del 9/10.</p></div>
     <div class="card"><h3>Autorizaciones de imagen</h3><p>Adultos mayores y menores de 18, en Escuelas y en la Sub 19, antes de grabar y de publicar.</p></div>
     <div class="card"><h3>Más adelante</h3><p>Colegios, después del 15/11. Pilates, zumba y yoga con entrenamiento cognitivo: se suma una pieza cuando se confirme el lanzamiento.</p></div>
   </div>
@@ -1074,7 +1030,7 @@
     <div class="card"><h3>Orden de edición</h3><p>Los viernes se editan miércoles y jueves. El día de filmación se sube un detrás de escena y se archiva el resto por producto.</p></div>
   </div>
 
-  <p class="foot">Descuentos de la Academia: 15% para ex alumnos de Primeros Toques y 10% para el resto, hasta el 15/11. Reservas de la Academia por WhatsApp al 096 657 777. No se publican precios en las piezas. La Academia se graba recién desde el 16/12.</p>
+  <p class="foot">Descuentos de la Academia: 15% para ex alumnos de Primeros Toques y 10% para el resto, hasta el 15/11. No se publican precios en las piezas. La Academia se graba recién desde el 16/12.</p>
 </main>
 
 <script>
@@ -1083,7 +1039,7 @@
   var MIN = Date.UTC(2026, 9, 7), MAX = Date.UTC(2026, 10, 30);
   var MESES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
   var DIAS = ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
-  var CATS = ['Feed','Historias','WhatsApp','Pauta','Filmación'];
+  var CATS = ['Feed','Historias','Pauta','Filmación'];
 
   function utc(m, d) { return Date.UTC(2026, m - 1, d); }
   function parseDate(txt) {
@@ -1107,7 +1063,6 @@
   document.querySelectorAll('.phase').forEach(function (sec) {
     var h = sec.querySelector('h2').textContent.trim();
     var cat = h === 'Jornadas de filmación' ? 'Filmación'
-      : h === 'Envíos por WhatsApp' ? 'WhatsApp'
       : h === 'Pauta día por día' ? 'Pauta'
       : h === 'Historias día por día' ? 'Historias' : 'Feed';
     sec.querySelectorAll('.rows > li').forEach(function (li) {
